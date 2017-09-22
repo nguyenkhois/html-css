@@ -1,0 +1,108 @@
+/* Common defines */
+body{
+    font-family: Arial;
+    background-color: #111111;
+}
+article{
+    background-color: lightgray;
+    padding: 10px;
+}
+p{
+    text-align: justify;
+}
+.firstcharacter:first-letter{
+    color: #903;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 50px;
+
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/raleway_thin-webfont.woff);
+    font-weight: bold;
+
+}
+
+.myfont{
+    font-family: myFirstFont;
+    font-size: 60px;
+}
+
+/* Menu's defines */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li{
+    float: left;
+}
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #111;
+}
+.active{
+    background-color: #4caf50;
+}
+
+/* Defines for introduction area */
+.introduction{
+    width: 52%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Defines for the boxs */
+*{
+    box-sizing: border-box;
+}
+
+/* Defines for the columns in content*/
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear float after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Define for the screens */
+@media (max-width: 600px) {
+    .column{
+        width: 100%;
+    }
+}
+
+.img-list{
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+
+footer {
+    color: #ffffff;
+    display: table;
+    width: 100%;
+    background-color: #4B4B4B;
+}

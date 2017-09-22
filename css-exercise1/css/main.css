@@ -1,0 +1,18 @@
+p:first-child::first-line{
+    color: blue;
+}
+
+p:nth-child(2)::before{
+    content: '';
+    display: inline-block;
+
+    background: url("../images/svt-logo.jpg") no-repeat;
+    background-color: burlywood;
+    background-size: contain;
+    height: 150px;
+    width: 400px;
+
+    margin: 0px 20px 0px 0px; /* top-right-bottom-left */
+
+    float: left;
+}

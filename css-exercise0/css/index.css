@@ -1,0 +1,46 @@
+#first-contain{
+    font-size: 25px;
+}
+
+.paragraph-1{
+    font-size: 30px;
+}
+
+.paragraph-2{
+    font-size: 30px;
+}
+
+/*Exercise 2*/
+/* Think about order of class */
+a[href^="http"]{
+    color: #fe00d7;
+}
+
+a[href^="https"]{
+    color: #23fe00;
+}
+
+h1{
+    background-color: grey;
+}
+
+p{
+    background-color: red;
+}
+
+div p {
+    background-color: green;
+}
+
+div ~ p {
+    background-color: yellow;
+}
+
+div + p {
+    background-color: #fe00d7;
+}
+
+li{
+    list-style-type: none;
+    text-transform: lowercase;
+}
