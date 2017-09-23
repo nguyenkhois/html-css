@@ -1,0 +1,39 @@
+div:first-child::after{
+    /* Define the image */
+    background: url("../images/svtlogo-black_v3.png") no-repeat;
+
+    /* Define properties of the box like size, background color,... */
+    background-color: gold;
+    height: 150px;
+    width: 600px;
+
+    /* For stretch in block */
+    background-size: contain; /* can also use property "cover" if you want fill all this box*/
+
+    /* For the position of this image in the box*/
+    background-position: center;
+    
+    /* For display this image on screen*/
+    content: 'Content after the div';
+
+    /* For the position of the box */
+    float: right;
+}
+
+/* ------------ Advance ------------ */
+/* Add new text into the div */
+div:first-child::before{
+    content: 'Content before the div';
+    color: red;
+    border: dashed;
+}
+
+/* Draw really div */
+div:first-child{
+    width: 800px;
+    height: 300px;
+    border: double;
+    border-color: chartreuse;
+    padding: 10px;
+    box-sizing: border-box;
+}
