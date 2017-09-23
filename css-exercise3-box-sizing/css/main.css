@@ -1,0 +1,47 @@
+div:first-child{
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+
+    padding: 10px;
+
+    border-color: blueviolet;
+    border-style: solid;
+}
+
+div:nth-child(2){
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+
+    padding: 10px;
+
+    border-color: red;
+    border-style: double;
+
+    background-color: #7F9DB9;
+}
+div:nth-child(3){
+    box-sizing: inherit;
+    width: 200px;
+    height: 200px;
+
+    padding: 10px;
+
+    border-color: #008000;
+    border-style: outset;
+
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+/* My own test */
+div:nth-child(3):after{
+    content: "After div 3";
+    color: red;
+}
+
+div:nth-child(3):before{
+    content: "Before div 3";
+    color: red;
+}
