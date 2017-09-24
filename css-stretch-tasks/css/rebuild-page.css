@@ -1,0 +1,30 @@
+header{
+    background-color: #990033;
+    height: 50px;
+}
+nav{
+    background-color: olivedrab;
+    height: 50px;
+}
+.row::after{
+    content: '';
+    display: table;
+    clear: both; /* No floating elements allowed on either the left or the right side */
+}
+.column{
+    float: left;
+    height: 300px;
+}
+main{
+    background-color: mediumslateblue;
+    width: 75%;
+    float: left;
+}
+aside{
+    background-color: darkcyan;
+    width: 25%;
+}
+footer {
+    background-color: darkorange;
+    height: 30px;
+}
