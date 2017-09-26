@@ -1,45 +1,35 @@
 /* Common definitions */
-* {
-    box-sizing: border-box;
-}
+* {box-sizing: border-box;} /* must have this code */
 .col-3 {width: 25%;}
 .col-9 {width: 75%;}
 
-.header{
-    height: 50px;
-    background-color: #990033;
-}
-.navigation{
-    height: 30px;
-    background-color: #4caf50;
+.container{
+    display: grid; /* Tell to browser what kind of layout we use - Grid */
+    width: 90%;
+    margin: auto;
 }
 
-main, aside{float: left;height: 30vh;}
-main{
-    background-color: #ba89b6;
-}
-aside{
-    background-color: darkcyan;
-}
+.header{height: 50px;background-color: #990033;}
+.navigation{height: 30px;background-color: #4caf50;}
 
-/* We must have this code for other elements as after have the right position */
+/* We must have this code for <main-content> display right and other elements have the right positions */
 .main-content::after {
     content: "";
     clear: both;
-    display: grid; /* Tell to browser that use Grid */
+    display: grid;
 }
-.main-content{
-    display: gr;
-}
-.footer{
-    height: 50px;
-    background-color: #f15b2a;
-}
+main, aside{float: left;height: 30vh;}
+main{background-color: #ba89b6;}
+aside{background-color: darkcyan;}
 
+.footer{height: 50px;background-color: #f15b2a;}
+
+/* Redefine container */
 @media screen and (max-width: 375px){
-    .main-content{display: grid;}
+    .container, .main-content{display: grid;}    /* Redefine layout's kind in new screen size */
+    [class*="col-"] {width: 100%;}
 
-    [class*="col-"] {
-        width: 100%;
-    }
+    /* Change order between <main> and <aside> */
+    main{order: 2;}
+    aside{order: 1;}
 }
