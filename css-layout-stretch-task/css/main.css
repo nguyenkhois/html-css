@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    background-color: #990033;
+    height: 40px;
+}
+nav{
+    background-color: #4caf50;
+    height: 40px;
+}
+main{
+    background-color: darkorchid;
+    float: left;
+    width: 75%;
+    height: 50vh;
+}
+aside{
+    background-color: darkcyan;
+    height: 50vh;
+}
+footer{
+    background-color: #f15b2a;
+    height: 30px;
+}
+
+/* Redefine order for <main> and <aside> */
+@media screen and (max-width: 375px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    main{order: 2; width: 100%}
+    aside{order: 1; width: 100%}
+}
