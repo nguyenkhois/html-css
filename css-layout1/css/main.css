@@ -1,0 +1,51 @@
+section{
+    /* Define container */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* axis y */
+    align-items: flex-start; /* axis x */
+
+    /* Config container */
+    background-color: #333333;
+    width: 500px;
+    height: 1000px;
+    margin: auto;
+
+    /* This property will use for child <article> 4 */
+    position: absolute;
+}
+
+/* Set all <article> have same size */
+article{
+    width: 100px;
+    height: 100px;
+}
+article:first-child{
+    background-color: #7F9DB9;
+    position: relative; /* The element is positioned relative to its normal position */
+    top: 50px;
+}
+
+article:nth-child(2){
+    background-color: #4caf50;
+    position: fixed; /* The element is positioned relative to the browser window */
+    top: 500px;
+    left: 300px;
+}
+article:nth-child(3){
+    background-color: gold;
+    position: absolute; /* The element is positioned relative to its first positioned (not static) ancestor element */
+}
+article:nth-child(4){
+    background-color: darkorchid;
+    position: inherit; /* Inherits this property from its parent element. */
+
+    top: 200px;
+}
+article:last-child{
+    background-color: darkorange;
+
+    top: 0px;
+    position: sticky; /* The element is positioned based on the user's scroll position */
+
+}
