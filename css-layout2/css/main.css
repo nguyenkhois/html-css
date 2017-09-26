@@ -1,0 +1,105 @@
+/* Common definitions */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Align container */
+    margin: auto;
+    width: 90%;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Definition for header */
+header{
+    background-color: bisque;
+    text-align: center;
+    height: 100px;
+}
+
+/* Definition for navigation */
+nav{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #cccccc;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    border-left: solid thin;
+}
+nav ul li:last-child{
+    border-right: solid thin;
+}
+
+/* Definition for section as content <main> and <aside> */
+section{
+    margin: auto;
+    width: 70%;
+}
+
+/* Definition for main content */
+main{
+    float: left;
+    width: 70%;
+    text-align: justify;
+}
+main img{
+    float: left;
+    width: 100px;
+}
+
+/* Definition for aside */
+aside{
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+aside img{
+    width: 200px;
+}
+
+/* Definition for footer */
+footer{
+    background-color: lightpink;
+    height: 50px;
+    padding-top: 7px;
+
+}
+footer div{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+}
+footer div:first-child::after{
+    content: 'Company info';
+}
+footer div:nth-child(2)::after{
+    content: 'My account';
+}
+footer div:last-child::after{
+    content: 'Customer service';
+}
+
+@media screen and (max-width: 375px){
+    /* Redefine menu */
+    nav ul li{
+        display: table;
+        border: solid thin;
+        width: 100%;
+    }
+
+    /* Redefine container */
+    section, main, aside{width: 100%;}
+    section h1, main h3{text-align: center;}
+}
