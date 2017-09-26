@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.col-3 {width: 25%;}
+.col-9 {width: 75%;}
+
+.header{
+    height: 50px;
+    background-color: #990033;
+}
+.navigation{
+    height: 30px;
+    background-color: #4caf50;
+}
+
+main, aside{float: left;height: 30vh;}
+main{
+    background-color: #ba89b6;
+}
+aside{
+    background-color: darkcyan;
+}
+
+/* We must have this code for other elements as after have the right position */
+.main-content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer{
+    height: 50px;
+    background-color: #f15b2a;
+}
+
+@media screen and (max-width: 375px){
+    [class*="col-"] {
+        width: 100%;
+    }
+}
