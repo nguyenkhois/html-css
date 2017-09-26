@@ -1,7 +1,7 @@
+/* Common definitions */
 * {
     box-sizing: border-box;
 }
-
 .col-3 {width: 25%;}
 .col-9 {width: 75%;}
 
@@ -26,15 +26,19 @@ aside{
 .main-content::after {
     content: "";
     clear: both;
-    display: table;
+    display: grid; /* Tell to browser that use Grid */
 }
-
+.main-content{
+    display: gr;
+}
 .footer{
     height: 50px;
     background-color: #f15b2a;
 }
 
 @media screen and (max-width: 375px){
+    .main-content{display: grid;}
+
     [class*="col-"] {
         width: 100%;
     }
