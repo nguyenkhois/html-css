@@ -7,3 +7,5 @@ We learn och try use HTML5 and CSS3 so much as possible. Basic is very important
 * [Git book](https://git-scm.com/book/en/v2)
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Can I use ...?](https://caniuse.com/)
+
+You are welcome to my main page on  [GitHub](https://github.com/nguyenkhois/nguyenkhois.github.io)!
