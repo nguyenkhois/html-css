@@ -1,6 +1,6 @@
 /* Common definitions */
 .container{
-    display: flex;
+    display: flex; /* Using Flexbox */
     flex-direction: column;
     justify-content: center;
 
@@ -92,14 +92,20 @@ footer div:last-child::after{
 }
 
 @media screen and (max-width: 375px){
+    /* Redefine container */
+    .container{
+        display: flex; /* Using Flexbox */
+        flex-direction: column;
+    }
+    
     /* Redefine menu */
     nav ul li{
-        display: table;
         border: solid thin;
         width: 100%;
+        justify-content: center;
     }
 
-    /* Redefine container */
+    /* Redefine main content */
     section, main, aside{width: 100%;}
     section h1, main h3{text-align: center;}
 }

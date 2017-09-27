@@ -16,7 +16,7 @@
 .main-content::after {
     content: "";
     clear: both;
-    display: grid;
+    display: grid; /* Using grid for main content */
 }
 main, aside{float: left;height: 30vh;}
 main{background-color: #ba89b6;}
@@ -26,7 +26,7 @@ aside{background-color: darkcyan;}
 
 /* Redefine container */
 @media screen and (max-width: 375px){
-    .container, .main-content{display: grid;}    /* Redefine layout's kind in new screen size */
+    .container, .main-content{display: grid;}    /* Redefine layout's kind in new screen size - Using grid*/
     [class*="col-"] {width: 100%;}
 
     /* Change order between <main> and <aside> */
