@@ -1,0 +1,75 @@
+body{font-family: Georgia;}
+*{box-sizing: border-box;}
+
+/* Begin of 4 ways for selections */
+/* Select  all <a> inside <div> for new styles */
+div a{
+    color: red;
+    text-decoration: none;
+    transition: 1s ease;
+}
+div a:hover{
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+/* Select  <a> have parent is <span> */
+span > a{
+    color: orangered;
+    text-decoration: underline;
+    transition: 1s ease;
+}
+span a:hover{
+    color: orange;
+    text-decoration: none;
+}
+
+/* Select <a> that placed immediately after <div> */
+div + a{
+    color: green;
+    text-decoration: none;
+    transition: 1s;
+}
+div + a:hover{
+    color: #23fe00;
+    text-decoration: underline;
+}
+
+/* Select div that preceded of <a> tag */
+a ~ div{
+    font-family: "Axure Handwriting";
+    color: #990033;
+}
+/* End of 4 ways */
+
+
+
+/* Select <a> tag whose href attribute begins with https */
+a[href^="https"]{
+    color: darkolivegreen;
+    text-decoration: none;
+}
+a[href^="https"]:hover{
+    color: #4caf50;
+    text-decoration: underline;
+}
+
+/* Select <a> tag whose href attribute ends with .pdf */
+a[href$=".pdf"]{
+    color: #ff00ff;
+    text-decoration: underline;
+}
+a[href$=".pdf"]:hover{
+    color: #a600a6;
+    text-decoration: none;
+}
+
+/* Select <a> tag whose href attribute contain w3school */
+a[href*="w3school"]{
+    color: #00008b;
+    text-decoration: none;
+}
+a[href*="w3school"]:hover{
+    color: #0000FF;
+    text-decoration: underline;
+}
